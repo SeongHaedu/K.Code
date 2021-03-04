@@ -25,8 +25,6 @@ img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 iframe {width: 100%;}
 
-
-
 @keyframes opa1 {
 0% {opacity: 0;}
 100% {opacity: 1;}
@@ -47,18 +45,19 @@ a:hover {
 /*ヘッダー（一番上の、ロゴやメニューが入っているブロック）
 ---------------------------------------------------------------------------*/
 header {
-	height: 100%;
+	height: 10%;
 	overflow-x: hidden;
 	position: relative;
 	background: url(../images/background.jpg) no-repeat center center / cover;	/*背景画像の読み込み*/
 }
-/*ロゴ画像*/
-header #logo img {
-	display: block;
-	width: 12%;	/*画像の幅*/
-	position: absolute;
-	left: 44%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
-	bottom: 50%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+
+header h1 {
+	text-align: center;
+	font-size: 50px;	/*文字サイズ*/
+	position: relative;
+	margin-top: 70px;
+	top: 30%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	color: #fff;
 }
 
 /*メニュー
@@ -66,7 +65,7 @@ header #logo img {
 /*メニューブロック全体への指定*/
 #menubar {
 	position: absolute;
-	bottom: 20%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	bottom: 10%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 	left: 11px;
 	width: 100%;
 	text-align: center;
@@ -93,9 +92,10 @@ header #logo img {
 	border-bottom: 2px solid #ffffff;	/*下線の幅、線種、色*/
 	letter-spacing: 0.1em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
 }
+
 #menubar_last {
 	position: absolute;
-	bottom: 300px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	bottom: 160px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 	left: 11px;
 	width: 100%;
 	text-align: center;
@@ -153,7 +153,6 @@ body.is-fixed .nav-fix-pos {
 	opacity: 1;	/*透明度（色が100%出た状態）*/
 	top: 0px;	/*画面上から0pxの場所に配置。（「#top #menubar」で枠外に出していたメニューを定位置に戻す設定）*/
 }
-
 }
 
 @keyframes fadein-bottom {
@@ -166,15 +165,15 @@ body.is-fixed .nav-fix-pos {
       transform: translateY(0);
    }
 }
-/*フェードイン*/
 .fadein {
 	opacity: 0;
 	animation-name: fadein-bottom;
 	animation-delay: 0.5S;
-	animation-duration: 1.5s;
+	animation-duration: 1.0s;
 	animation-timing-function: ease-out;
-	animation-fill-mode: both;
+	animation-fill-mode: forwards;
 }
+
 /*コンテンツ（上のcontainerの中のブロック）
 ---------------------------------------------------------------------------*/
 
@@ -183,28 +182,43 @@ body.is-fixed .nav-fix-pos {
 	position: relative;z-index: 1;
 }
 
-#contents section + section {
-	padding-top: 50px;
-}
-
 #contents h2 {
 	clear: both;
-	padding-top: 45px;
-	padding-bottom: 45px;
-	font-size: 45px;	/*文字サイズ*/
-	letter-spacing: 0.2em;	/*文字間隔を少し広くとる設定*/
-	text-align: center;		/*文字をセンタリング*/
-	color: #000000;
+	font-size: 50px;	/*文字サイズ*/
+	letter-spacing: 0.05em;	/*文字間隔を少し広くとる設定*/
+	text-align: left;		/*文字をセンタリング*/
+	position: relative;
+	left: 50%;
+	width: 45%;
+	color: #ffffff;		/*文字色*/
 }
-
-#about-kcode {
-	overflow: hidden;
+/*コンテンツ内にあるh3(見出し)タグの指定*/
+#contents h3 {
+	clear: both;
+	font-size: 35px;	/*文字サイズ*/
+	letter-spacing: 0.05em;	/*文字間隔を少し広くとる設定*/
+	text-align: left;		/*文字をセンタリング*/
+	position: relative;
+	left: 50%;
+	width: 45%;
+	color: #ffffff;		/*文字色*/
 }
-#about-online {
-	overflow: hidden;
+#contents h4 {
+	clear: both;
+	font-size: 30px;	/*文字サイズ*/
+	letter-spacing: 0.05em;	/*文字間隔を少し広くとる設定*/
+	text-align: left;		/*文字をセンタリング*/
+	position: relative;
+	left: 50%;
+	width: 45%;
+	color: #ffffff;		/*文字色*/
 }
-#about-price {
-	overflow: hidden;
+#cafe-latte-order-app {
+	animation-name: fadein-bottom;
+	animation-delay: 1.5S;
+	animation-duration: 2.0s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
 }
 /*コンテンツ内にある固定バックグラウンド*/
 .fix-background {
@@ -213,54 +227,31 @@ body.is-fixed .nav-fix-pos {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	padding-top: 150px;
+	height: 1000px
 }
-.KCode {
-	background-image: url(../images/about_kcode/KCode_home_opa.png);
-	padding-top: 180px;
-	padding-bottom: 180px;
-	opacity: 1.0;
-	transition: all 0.5s;
+.cafe-latte-screen {
+	background-image: url(../images/course_cafe_latte/cafe_screen.png);
+	padding-top: 90px;
 }
-.KCode:hover {
-	opacity: 1.0;
-  transform: scale(1.02, 1.02);
+.cafe-latte-home {
+	background-image: url(../images/course_cafe_latte/cafe_home.png);
 }
-.Online_Lesson {
-	background-image: url(../images/about_online_lesson/about_online_class_home_opa.png);
-	padding-top: 180px;
-	padding-bottom: 180px;
-	opacity: 1.0;
-	transition: all 0.5s;
+.cafe-latte-shop {
+	background-image: url(../images/course_cafe_latte/cafe_shop.png);
 }
-.Online_Lesson:hover {
-	opacity: 1.0;
-  transform: scale(1.02, 1.02);
+.cafe-latte-map {
+	background-image: url(../images/course_cafe_latte/cafe_map.png);
 }
-.Price {
-	background-image: url(../images/about_price/money.jpg);
-	padding-top: 180px;
-	padding-bottom: 180px;
-	opacity: 1.0;
-	transition: all 0.5s;
-}
-.Price:hover {
-	opacity: 1.0;
-  transform: scale(1.02, 1.02);
-}
-.swiftui-CafeLatte {
+.cafe-latte-detail {
 	background-image: url(../images/course_cafe_latte/cafe_detail.png);
-	padding-top: 200px;
-	padding-bottom: 200px;
 }
-.swiftui-Janken {
-	background-image: url(../images/course_janken/janken_win.png);
-	padding-top: 200px;
-	padding-bottom: 200px;
+.cafe-latte-list {
+	background-image: url(../images/course_cafe_latte/cafe_list.png);
 }
-.background-schedule {
-	background-image: url(../images/moraine.jpg);
+.cafe-latte-record {
+	background-image: url(../images/course_cafe_latte/cafe_record.png);
 }
-
 .scroll-background {
     min-height: 100%;
 }
@@ -288,82 +279,19 @@ body.is-fixed .nav-fix-pos {
 }
 
 /*白色ボックス*/
-/*clearfix（変更不要）*/
-.bg2:after {
-    content: "";display: block;clear: both;
-}
-/*リンクテキストの文字色*/
-.bg2 a:hover {
-	color: #ffffff;
-}
+
 /*bg2ブロック*/
 .bg2 {
-	min-height: 100%;
+	min-height: 200px;
 	background: #ffff;	/*背景色*/
 	color: #ffff;			/*文字色*/
-}
-/*bg2ブロック内の円形イラストの背景色*/
-.bg2 h2.img {
-	background: #b4a282 !important;
-}
-/*コンテンツ内にあるh3(見出し)タグの指定*/
-#contents h3 {
-	clear: both;
-	font-size: 36px;	/*文字サイズ*/
-	letter-spacing: 0.05em;	/*文字間隔を少し広くとる設定*/
-	text-align: center;		/*文字をセンタリング*/
-	transition: 1.0s;
-	color: #ffffff;		/*文字色*/
+	padding: 0 15% 5px;
 }
 
-#contents h3:hover {
-	letter-spacing: 0.15em;
-	transition: 1.0s;
-	color: #ffffff;
-}
-
-#contents h4 {
-	color: #ffffff;
-	font-size: 40px;	/*文字サイズ*/
-	position: relative;
-	top: 0px;	/*上に100px移動させる設定*/
-	left: 10%;
-	text-align: center;
-	width: 40%;
-	padding-top: 100px;
-	padding-bottom: 60px;
-}
-/*コンテンツ内のh2見出しにclass="img"をつけた場合（各ブロック冒頭の円形のアクセント用イラスト）*/
-#contents h4 img {
-	border-radius: 20%;
-}
-
-#contents h4.icon {
-	transition: 1.0s;
-	display: block;
-	overflow: hidden;
-	margin: 0;
-	width: 120px;		/*画像幅*/
-	height: 120px;
-	padding: 3%;	/*画像と円形との間の余白*/
-	top: 0px;	/*上に100px移動させる設定*/
-	left: 25%;
-	color: #fff;
-	background: #87cefa;
-	border-radius: 50%;	/*円形にする指定。外すと四角形になる。10pxなどにすると角が丸くなった四角形になる。*/
-	box-shadow: 0px 10px 0px 0px #fff,0px 20px 5px 0px rgba(0,0,0,0.2);	/*２つの影を指定。前半は白いくっきりした影、２つ目は薄い黒っぽい影。*/
-}
-
-/*上の円形イラスト内のテキスト*/
-#contents h4.icon:hover {
-	transition: 1.0s;
-	background: #1e90ff;
-	box-shadow: 0px 10px 0px 0px #c0c0c0,0px 15px 5px 0px rgba(0,0,0,0.2);
-}
 
 #contents h5 {
 	color: #ffffff;
-	font-size: 40px;	/*文字サイズ*/
+	font-size: 30px;	/*文字サイズ*/
 	position: relative;
 	top: 0px;	/*上に100px移動させる設定*/
 	left: 45%;
@@ -385,7 +313,7 @@ body.is-fixed .nav-fix-pos {
 	height: 120px;
 	padding: 3%;	/*画像と円形との間の余白*/
 	top: 0px;	/*上に100px移動させる設定*/
-	left: 65%;
+	left: 63%;
 	color: #fff;
 	background: #b4a282;
 	border-radius: 50%;	/*円形にする指定。外すと四角形になる。10pxなどにすると角が丸くなった四角形になる。*/
@@ -400,9 +328,16 @@ body.is-fixed .nav-fix-pos {
 }
 
 #contents h6 {
-	text-align: right;
-	color: #fff
+	color: #000;
+	font-size: 45px;	/*文字サイズ*/
+	letter-spacing: 0.2em;
+	position: relative;
+	padding-top: 80px;	/*上に100px移動させる設定*/
+	text-align: center;
+	width: 100%;
+
 }
+
 
 /*コンテンツ内にあるp(段落)タグ設定*/
 #contents p {
@@ -418,15 +353,6 @@ body.is-fixed .nav-fix-pos {
 	margin-top: -10px;
 }
 
-/*カレンダー設定*/
-#calendar {
-	color: #fff;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-#loading {
-	color: #fff;
-}
 #contact {
 	height: 1100px;
 }
@@ -436,62 +362,9 @@ body.is-fixed .nav-fix-pos {
 	padding-top: 400px
 }
 
-/*Serviceページ
----------------------------------------------------------------------------*/
-/*各ブロックごとの設定*/
-.list {
-	width: 24%;
-	height: 100px;
-	float: left;
-	overflow: hidden;
-	position: left;
-	padding: 20px 40px;		/*上下、左右へのボックス内の余白*/
-	border-radius: 15px;	/*角丸のサイズ。この１行を削除すると、通常の長方形になります。*/
-	margin: 15px;	/*下に空けるスペース*/
-	background: #ffffff;		/*背景色*/
-}
-/*１番目のlistブロックへの追加指定。上に線を入れる。*/
 
-/*h4見出しの設定*/
-.list h4 {
-	font-size: 20px;	/*文字サイズ*/
-	margin-bottom: 10px;
-}
-/*画像の設定*/
-.list img {
-	width: 100%;			/*画像幅*/
-	float: right;		/*画像を左に回り込み*/
-	margin-right: 3%	/*画像の右側に空けるスペース*/
-}
 
-/*段落タグ*/
-.list p {
-	padding: 0 !important;
-}
 
-.list_zoom {
-	float: none;
-	overflow: hidden;
-	position: relative;
-
-}
-/*h4見出しの設定*/
-.list_zoom h4 {
-	font-size: 20px;	/*文字サイズ*/
-	margin-bottom: 10px;
-}
-/*画像の設定*/
-.list_zoom img {
-	width: 120%;			/*画像幅*/
-	margin-right: 3%;	/*画像の右側に空けるスペース*/
-	float: center;
-	border-radius: 10px
-}
-
-/*段落タグ*/
-.list_zoom p {
-	padding: 0 !important;
-}
 /*フッター設定
 ---------------------------------------------------------------------------*/
 footer {
@@ -502,6 +375,7 @@ footer {
 	background: #ffffff;	/*背景色*/
 	color: #000000;		/*文字色*/
 	font-size: 85%;		/*文字サイズ*/
+
 	position: relative;
 	z-index: 2;
 }
@@ -596,20 +470,6 @@ footer .pr {
 }
 
 
-/*トップページのNEWアイコン
----------------------------------------------------------------------------*/
-.newicon {
-	font-size: 70%;
-	display: inline-block;
-	line-height: 1.5;
-	padding: 2px 5px;
-	border-radius: 2px;
-	margin: 0px 5px;
-	vertical-align: text-top;
-	background: #F00;	/*背景色*/
-	color: #FFF;		/*文字色*/
-}
-
 /*PAGE TOP（↑）設定
 ---------------------------------------------------------------------------*/
 body .nav-fix-pos-pagetop a {
@@ -679,11 +539,7 @@ ul.disc {padding: 0em 25px 15px 40px;list-style: disc;}
 
 /*ヘッダー（一番上の、ロゴやメニューが入っているブロック）
 ---------------------------------------------------------------------------*/
-/*ロゴ画像*/
-header #logo img {
-	width: 20%;	/*画像の幅*/
-	left: 40%;	/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
-}
+
 /*画像の設定*/
 .list img {
 	width: 50%;			/*画像幅*/
@@ -744,11 +600,7 @@ header #logo img {
 
 /*ヘッダー（一番上の、ロゴやメニューが入っているブロック）
 ---------------------------------------------------------------------------*/
-/*ロゴ画像*/
-header #logo img {
-	width: 30%;	/*画像の幅*/
-	left: 35%;	/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
-}
+
 
 #menubar li a {
 	text-decoration: none;display: block;text-align: center;
@@ -774,29 +626,48 @@ header #logo img {
 }
 
 #contents h2 {
-	font-size: 25px;	/*文字サイズ*/
+	font-size: 20px;	/*文字サイズ*/
 }
 /*コンテンツ内にあるh3(見出し)タグの指定*/
 #contents h3 {
-	font-size: 20px;	/*文字サイズ*/
+	font-size: 12px;	/*文字サイズ*/
 }
 #contents h4 {
-	font-size: 23px;
+	font-size: 12px;	/*文字サイズ*/
 }
-#contents h4.icon {
-	width: 80px;		/*画像幅*/
-	height: 80px;
-	padding: 5%;	/*画像と円形との間の余白*/
-	left: 14%;
+#contents h6 {
+	font-size: 25px;	/*文字サイズ*/
 }
-#contents h5 {
-	font-size: 23px;
+
+
+.fix-background {
+	min-width: 100%;
+	background-attachment: fixed;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-#contents h5.icon {
-	width: 80px;		/*画像幅*/
-	height: 80px;
-	padding: 5%;	/*画像と円形との間の余白*/
-	left: 54%;
+.cafe-latte-screen {
+	background-image: url(../images/course_cafe_latte/cafe_screen_iphone.png);
+	padding-top: 90px;
+}
+.cafe-latte-home {
+	background-image: url(../images/course_cafe_latte/cafe_home_iphone.png);
+}
+.cafe-latte-shop {
+	background-image: url(../images/course_cafe_latte/cafe_shop_iphone.png);
+}
+.cafe-latte-map {
+	background-image: url(../images/course_cafe_latte/cafe_map_iphone.png);
+}
+.cafe-latte-detail {
+	background-image: url(../images/course_cafe_latte/cafe_detail_iphone.png);
+}
+.cafe-latte-list {
+	background-image: url(../images/course_cafe_latte/cafe_list_iphone.png);
+}
+.cafe-latte-record {
+	background-image: url(../images/course_cafe_latte/cafe_record_iphone.png);
 }
 
 /*Serviceページ

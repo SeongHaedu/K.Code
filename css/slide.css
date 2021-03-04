@@ -3,9 +3,10 @@
 
 /*CSSスライドショー設定
 ---------------------------------------------------------------------------*/
+
 /*１枚目*/
 @keyframes slide1 {
-	0% {opacity: ;}
+	0% {opacity: 1;}
 	10% {opacity: 1;}
 	40% {}
 	50% {opacity: 1;}
@@ -31,6 +32,14 @@
 	90% {opacity: 1;}
 	100% {opacity: 0;}
 }
+@keyframes slide4 {
+	0% {opacity: 0;}
+	10% {opacity: 0;}
+	40% {}
+	50% {opacity: 0;}
+	60% {opacity: 0;}
+	100% {opacity: 1;}
+}
 
 /*mainimg
 ---------------------------------------------------------------------------*/
@@ -38,14 +47,16 @@
 #mainimg {
 	clear: left;
 	text-indent: -9999px;
-	position: absolute;	/*スクロールしても固定表示させる指定*/
+	position: fixed;	/*スクロールしても固定表示させる指定*/
 	top: 0px;
+	margin: 0;
+	padding: 0;
 	width: 100%;
 	height: 100%;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);	/*影の設定。右に、下に、広げる幅、rgbaは色で0,0,0は黒、0.2は透明度20%の事。*/
 }
 /*３枚画像の共通設定*/
-.slide1,.slide2,.slide3 {
+.slide0,.slide1,.slide2,.slide3 {
 	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
 	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
 	position: absolute;left:0px;top:0px;width: 100%;height: 100%;
@@ -54,11 +65,12 @@
 	animation-delay: 2s;
 }
 
+
 /*１枚目*/
 .slide1 {
 	height: 100%;
 	overflow-x: hidden;
-	background: url(../images/background.jpg) no-repeat center center/cover;
+	background: url(../images/KCode_top_opa.png) no-repeat center center/cover;
 	animation-name: slide1;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*２枚目*/
@@ -74,4 +86,10 @@
 	overflow-x: hidden;
 	background: url(../images/coffee_macbook1.jpg) no-repeat center center/cover;
 	animation-name: slide3;
+}
+.slide4 {
+	height: 100%;
+	overflow-x: hidden;
+	background: url(../images/KCode_top_opa.png) no-repeat center center/cover;
+	animation-name: slide4;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
