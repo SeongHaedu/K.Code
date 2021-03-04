@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>K.Code</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="K.Code">
+<meta name="keywords" content="K.Code,プログラミング,プログラミングスクール,学生,学生から始めるプログラミング,学生から始められるプログラミングスクール,学生用プログラミングスクール,学生向けのプログラミングスクール,中学,高校,大学">
+<link rel="stylesheet" href="css/style_about_price.css">
+<link rel="stylesheet" href="css/slide.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+var windowH = $(window).height(),
+scrollY = $(window).scrollTop();
+$('#logo img, #about-kcode-other h1, #about-kcode-other h2, #about-kcode-other h3, #about-kcode-other h4').each(function() {
+  var elPosition = $(this).offset().top;
+  if (scrollY > elPosition - windowH) {
+    $(this).addClass("fadein");
+  }else{
+    $(this).removeClass("fadein");
+  }
+});
+});
+
+</script>
+<!--フェードイン-->
+
+</head>
+
+<body>
+
+<header>
+
+<!--スライドショー-->
+<aside id="mainimg">
+<div class="slide1">slide1</div>
+<div class="slide2">slide2</div>
+<div class="slide3">slide3</div>
+<div class="slide4">slide4</div>
+</aside>
+
+
+<nav id="menubar">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+</header>
+
+
+
+<div id="container">
+
+<div id="contents">
+
+
+<div class="fix-background Price">
+<div id="about-kcode">
+<h1>Price</h1>
+<table class="ta1">
+
+<tr>
+<th>Cafe Latte Order App</th>
+<td>¥2,000/h</td>
+</tr>
+<tr>
+<th>Janken App</th>
+<td>¥2,000/h</td>
+</tr>
+
+</table>
+<h2>
+    一回の講義は、一時間を目安に作成しております。<br>
+    各授業でテキストの購入を希望のお客様は上記の値段+¥500でご提供いたします。<br>
+    ※全ての授業は税抜き価格です。
+</h2>
+</div>
+</div>
+
+
+<div class="bg2">
+<h5>Contact</h5>
+</div>
+<!--/#about-->
+
+
+<div id="contact">
+
+<p class="c"><a href="index.html"><img src="images/K_Code(black_transparency).png" alt="" width="150px"></a></p>
+
+<nav id="menubar_last">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+
+<p>
+Mail: kaito_narimoto@icloud.com<br>
+対応時間: AM9:00〜PM10:00</p>
+
+</div>
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+
+<footer>
+<small>Copyright&copy; K.Code All Rights Reserved.</small>
+<span class="pr">Web Design: Kaito Narimoto</span>
+</footer>
+<!--<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>-->
+
+</body>
+</html>

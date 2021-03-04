@@ -6,7 +6,7 @@
 <title>K.Code</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="K.Code">
-<meta name="keywords" content="k.code,K.Code,プログラミング,プログラミングスクール,学生,学生から始めるプログラミング,学生から始められるプログラミングスクール,学生用プログラミングスクール,学生向けのプログラミングスクール,中学,高校,大学">
+<meta name="keywords" content="K.Code,プログラミング,プログラミングスクール,学生,学生から始めるプログラミング,学生から始められるプログラミングスクール,学生用プログラミングスクール,学生向けのプログラミングスクール,中学,高校,大学">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/slide.css">
 <script src="js/openclose.js"></script>
@@ -30,143 +30,208 @@ return false;
 });
 });
 </script>
+<script src='lib/locales/ja.js'></script>
+<link href='lib/main.css' rel='stylesheet'>
+<script src='lib/main.js'></script>
+<script>
+$(window).scroll(function() {
+var windowH = $(window).height(),
+scrollY = $(window).scrollTop();
+$('#contents h3, #contents h4, #contents h5').each(function() {
+  var elPosition = $(this).offset().top;
+  if (scrollY > elPosition - windowH) {
+    $(this).addClass("fadein");
+  }else{
+    $(this).removeClass("fadein");
+  }
+});
+});
+</script>
+<!--フェードイン-->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,listYear'
+      },
+
+      displayEventTime: false, // don't show the time column in list view
+
+      // THIS KEY WON'T WORK IN PRODUCTION!!!
+      // To make your own Google API key, follow the directions here:
+      // http://fullcalendar.io/docs/google_calendar/
+      googleCalendarApiKey: 'AIzaSyAuXbrQpAZi5SIFDx8feT7vWzGqgj-LmI4',
+
+      // US Holidays
+      events: '58ojvctnarkdrvsgarq7525jjk@group.calendar.google.com',
+
+      eventClick: function(arg) {
+        // opens events in a popup window
+        window.open(arg.event.url, 'google-calendar-event', 'width=700,height=600');
+
+        arg.jsEvent.preventDefault() // don't navigate in main tab
+      },
+
+      loading: function(bool) {
+        document.getElementById('loading').style.display =
+          bool ? 'block' : 'none';
+      }
+
+    });
+
+    calendar.render();
+  });
+
+</script>
+<style>
+
+  body {
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  #loading {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  #calendar {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+</style>
 </head>
 
 <body>
 
 <header>
+
 <!--スライドショー-->
 <aside id="mainimg">
-<div class="slide0">slide0</div>
 <div class="slide1">slide1</div>
 <div class="slide2">slide2</div>
 <div class="slide3">slide3</div>
+<div class="slide4">slide4</div>
 </aside>
 
 <h1 id="logo"><a href="index.html"><img src="images/K_Code(black_transparency).png" alt="K.Code"></a></h1>
 <nav id="menubar">
 <ul>
-<li><a href="#new">News</a></li>
-<li><a href="#company">About</a></li>
-<li><a href="#service">Reservation</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#course">Course</a></li>
+<li><a href="#schedule">Schedule</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 </header>
 
+
+
 <div id="container">
 
 <div id="contents">
 
-<section id="new" class="">
 
-<h2>News</h2>
-<dl>
-<dt>2021/01/13</dt>
-<dd>K.Code開設<span class="newicon">NEW</span></dd>
-<dt>2021/01/13</dt>
-<dd>iPhoneのアプリ用言語 「SwiftUI」 テキスト完成 <span class="newicon">NEW</span></dd>
-<dt>2021/XX/XX</dt>
-<dd>「Python」テキスト Coming soon...</dd>
-</dl>
-
-</section>
-<!--/#new-->
-
-<section id="company" class="">
-
+<div id="about" class="bg2">
 <h2>About</h2>
-<section class="bg1">
-<h3>K.Codeとは</h3>
-<p>学生向けのプログラミングスクールです。</p>
-<p>ポストコロナ社会でも学生にプログラミングを学ぶ機会を提供するために、このグループを立ち上げました。<br>
-  主にiPhoneのアプリ開発やデータ分析、人工知能について教えていきます。<br>
-  学生のうちからプログラミングを始めたい方、興味のある方、今日から初めてみませんか?
-</p>
-<p>
-  入会をご希望の方はContactのメールにてご連絡下さい。<br>
-  ※入会費は無料です。
-</p>
-<h6>K.Code: 成本 海斗</h6>
-</section>
+</div>
 
-<section class="bg2">
-<h3>オンライン授業</h3>
+<div id="about-kcode">
+<div class="fix-background KCode">
+<a href="about_kcode.html"><h3>K.Codeとは</h3></a>
+</div>
+</div>
+<div id="about-online">
+<div class="fix-background Online_Lesson">
+<a href="online_lesson.html"><h3>Online Lesson</h3></a>
+</div>
+</div>
+<div id="about-price">
+<div class="fix-background Price">
+<a href="price.html"><h3>Price</h3></a>
+</div>
+</div>
 
-<div class="list_zoom">
-<p>K.Codeはオンラインツールを取り入れたリモート型の授業になっております。<br>
-  そのため、ポストコロナ社会でも安心安全で授業を受けることができます。</p>
+<!--/#about-->
+
+
+<div id="course" class="bg2">
+<h2>Course</h2>
+</div>
+<div class="fix-background swiftui-CafeLatte">
+<h5>SwiftUI</br>
+Cafe Latte Order App</br>
+Level ★★★★☆</h5>
+<a href="course_cafe_latte.html"><h5 class="icon"><img src="images/CafeLatte_icon.png" alt="SwiftUI"></h5></a>
 <p></p>
-<p>&lt;Web会議ツールZoomを使ったオンライン授業&gt;</p>
-<img src="images/Zoom_Class.png" alt="">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
 
-</section>
+<div class="fix-background swiftui-Janken">
+<h4>SwiftUI</br>
+Janken App</br>
+Level ★★☆☆☆</h4>
+<a href="course_janken.html"><h4 class="icon"><img src="images/Janken_icon.png" alt="SwiftUI"></h4></a>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+<!--/#course-->
+
+<div id="schedule" class="bg2">
+<h2>Schedule</h2>
+</div>
+
+<div class="fix-background background-schedule">
+<p></p>
+<div id='loading'></div>
+<div id="calendar"></div>
+<p></p>
+</div>
+<!--/#schedule-->
 
 
-<section class="bg2">
-<h3>料金一覧</h3>
-<table class="ta1">
-
-<tr>
-<th>SwiftUI</th>
-<td>¥2,000/h</td>
-</tr>
-
-</table>
-<p>
-  一回の講義は、一時間を目安に作成しております。<br>
-  各授業でテキストの購入を希望のお客様は上記の値段+¥500でご提供いたします。<br>
-  ※全ての授業は税抜き価格です。
-</p>
-
-
-</section>
-</section>
-<!--/#company-->
-
-<section id="service" class="">
-
-<h2>Reservation</h2>
-
-<h5 class="img"><a href="reservation.html"><img src="images/SwiftUI.png" alt="SwiftUI"></a><span>SwiftUI</span></h5>
-
-</section>
-
-<!--/#service-->
-
-<section id="contact">
-  <p></p>
-  <p></p>
-  <p></p>
-  <p></p>
+<div class="bg2">
 <h2>Contact</h2>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+</div>
+
+<div id="contact">
+
 <p class="c"><a href="index.html"><img src="images/K_Code(black_transparency).png" alt="" width="150px"></a></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p class="c">
+
+<nav id="menubar_last">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+
+<p>
 Mail: kaito_narimoto@icloud.com<br>
 対応時間: AM9:00〜PM10:00</p>
-<p></p>
-<p></p>
-<p></p>
 
-
-
-</section>
+</div>
 <!--/#contact-->
+
 
 </div>
 <!--/#contents-->
@@ -174,9 +239,10 @@ Mail: kaito_narimoto@icloud.com<br>
 </div>
 <!--/#container-->
 
+
 <footer>
-<small>Copyright&copy; <a href="index.html">K.Code</a> All Rights Reserved.</small>
-<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design: Kaito Narimoto</a>》</span>
+<small>Copyright&copy; K.Code All Rights Reserved.</small>
+<span class="pr">Web Design: Kaito Narimoto</span>
 </footer>
 
 <!--ページの上部に戻る「↑」ボタン-->

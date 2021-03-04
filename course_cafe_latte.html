@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="K.Code">
+<meta name="keywords" content="K.Code,プログラミング,プログラミングスクール,学生,学生から始めるプログラミング,学生から始められるプログラミングスクール,学生用プログラミングスクール,学生向けのプログラミングスクール,中学,高校,大学">
+<link rel="stylesheet" href="css/style_course_cafe_latte.css">
+<link rel="stylesheet" href="css/slide.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+var windowH = $(window).height(),
+scrollY = $(window).scrollTop();
+$('#cafe-latte-order-app-other h2, #cafe-latte-order-app-other h3, #cafe-latte-order-app-other h4').each(function() {
+  var elPosition = $(this).offset().top;
+  if (scrollY > elPosition - windowH) {
+    $(this).addClass("fadein");
+  }else{
+    $(this).removeClass("fadein");
+  }
+});
+});
+</script>
+<!--フェードイン-->
+
+
+
+</head>
+
+<body>
+
+<header>
+
+<!--スライドショー-->
+<aside id="mainimg">
+<div class="slide1">slide1</div>
+<div class="slide2">slide2</div>
+<div class="slide3">slide3</div>
+<div class="slide4">slide4</div>
+</aside>
+
+<nav id="menubar">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+
+</ul>
+</nav>
+</header>
+
+
+
+<div id="container">
+
+<div id="contents">
+
+
+<div class="fix-background cafe-latte-screen">
+<div id="cafe-latte-order-app">
+<h2>Cafe Latte Order App</h2>
+<h3>
+</br>
+Level ★★★★☆
+</h3>
+<h4>
+</br>
+iPhoneのアプリを作る言語「SwiftUI」を使ってカフェラテ注文アプリを作成します。</br>
+レイアウトの配置、画面遷移、マップ、ボタン、デザイン、お気に入り、リストなどの機能を勉強していきます。</br>
+この授業はiPhoneアプリを作るにあたり、基礎から応用まで幅広く扱っております。</br>
+</h4>
+</div>
+</div>
+
+<div id="cafe-latte-order-app-other">
+<div class="fix-background cafe-latte-home">
+<h2>Home</h2>
+<h3>
+</br>
+  ・  トップメニューの遷移</br>
+  ・  カテゴリレイアウトの配置</br>
+  ・  スクロール</br>
+</br>
+</h3>
+<h4>
+好きなカフェの写真や名前を入れてデザインの変更をすることができます。</br>
+User Interface (UI) の基本であるレイアウトの配置、画面のスクロール方向について学びます。</br>
+</h4>
+</div>
+<div class="fix-background cafe-latte-shop">
+<h2>Information</h2>
+<h3>
+</br>
+  ・  画面遷移</br>
+  ・  レイアウトの配置</br>
+</br>
+</h3>
+<h4>
+お店の写真、名前、住所、電話番号、マップの背景表示を作成し、基本情報について実装します。</br>
+iPhoneのアプリには欠かせない画面の遷移の方法やレイアウトの配置について学ぶことができます。</br>
+</h4>
+</div>
+<div class="fix-background cafe-latte-map">
+<h2>Map</h2>
+<h3>
+</br>
+  ・  画面遷移</br>
+  ・  マップの導入</br>
+</br>
+</h3>
+<h4>
+表示させたいお店の緯度、経度をプログラムして、日本でも世界でもお気に入りの場所を表示させます。
+</h4>
+</div>
+<div class="fix-background cafe-latte-detail">
+<h2>Order Menu</h2>
+<h3>
+</br>
+  ・  レイアウトデザイン</br>
+  ・  様々なボタンの実装</br>
+</br>
+</h3>
+<h4>
+注文にあたって、カフェラテの種類選択ボタン、砂糖の有無、トッピングの種類選択ボタン、個数カウントボタンを作成していきます。</br>
+</h4>
+</div>
+<div class="fix-background cafe-latte-list">
+<h2>Order List</h2>
+<h3>
+</br>
+  ・  注文リストの作成</br>
+  ・  注文の保存</br>
+  ・  お気に入り機能</br>
+</br>
+</h3>
+<h4>
+注文を一時的に保存する方法やお気に入り機能を導入することで、UIの使いやすさについて学ぶことができます。
+</h4>
+</div>
+<div class="fix-background cafe-latte-record">
+<h2>Order Detail</h2>
+<h3>
+</br>
+  ・  画面遷移</br>
+  ・  注文の確認</br>
+  ・  リアルタイムの注文時間の表示</br>
+</br>
+</h3>
+<h4>
+注文の最終確認をするために、リストから詳細へ画面遷移の実装を行います。
+</h4>
+</div>
+<div class="fix-background cafe-latte-home">
+<h2>Course</h2>
+<h3>
+</br>
+  ・  全18回</br>
+  ・  Zoomによるオンライン授業</br>
+</br>
+</h3>
+<h4>
+SwiftUIを扱うにあたり、Xcode 11以降のインストールが必要なため、Mojave (10.14.4) 以降のmacOSが搭載されているMacbookやiMacなどが必要です。</br>
+</h4>
+</div>
+</div>
+<!--/#about-->
+
+
+<div class="bg2">
+<h6>Contact</h6>
+</div>
+
+<div id="contact">
+
+<p class="c"><a href="index.html"><img src="images/K_Code(black_transparency).png" alt="" width="150px"></a></p>
+
+<nav id="menubar_last">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+
+<p>
+Mail: kaito_narimoto@icloud.com<br>
+対応時間: AM9:00〜PM10:00</p>
+
+</div>
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+
+<footer>
+<small>Copyright&copy; K.Code All Rights Reserved.</small>
+<span class="pr">Web Design: Kaito Narimoto</span>
+</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<!--<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>-->
+
+</body>
+</html>

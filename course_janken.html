@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="K.Code">
+<meta name="keywords" content="K.Code,プログラミング,プログラミングスクール,学生,学生から始めるプログラミング,学生から始められるプログラミングスクール,学生用プログラミングスクール,学生向けのプログラミングスクール,中学,高校,大学">
+<link rel="stylesheet" href="css/style_janken.css">
+<link rel="stylesheet" href="css/slide.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+var windowH = $(window).height(),
+scrollY = $(window).scrollTop();
+$('#janken-app-other h2, #janken-app-other h3, #janken-app-other h4').each(function() {
+  var elPosition = $(this).offset().top;
+  if (scrollY > elPosition - windowH) {
+    $(this).addClass("fadein");
+  }else{
+    $(this).removeClass("fadein");
+  }
+});
+});
+</script>
+<!--フェードイン-->
+
+
+
+</head>
+
+<body>
+
+<header>
+
+<!--スライドショー-->
+<aside id="mainimg">
+<div class="slide1">slide1</div>
+<div class="slide2">slide2</div>
+<div class="slide3">slide3</div>
+<div class="slide4">slide4</div>
+</aside>
+
+<nav id="menubar">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+
+</ul>
+</nav>
+</header>
+
+
+
+<div id="container">
+
+<div id="contents">
+
+
+<div class="fix-background janken-screen">
+<div id="janken-app">
+<h2>Janken App</h2>
+<h3>
+</br>
+Level ★★☆☆☆
+</h3>
+<h4>
+</br>
+iPhoneのアプリを作る言語「SwiftUI」を使ってジャンケンアプリを作成します。</br>
+レイアウトの配置、ボタン、画像の挿入、組み込みプログラムなどの機能を勉強していきます。</br>
+この授業はiPhoneアプリを作るにあたり、SwiftUIの基礎を深く扱っております。</br>
+</h4>
+</div>
+</div>
+
+<div id="janken-app-other">
+<div class="fix-background janken-home">
+<h2>Janken</h2>
+<h3>
+</br>
+  ・  画像の挿入</br>
+  ・  レイアウトの配置</br>
+</br>
+</h3>
+<h4>
+User Interface (UI) の基本であるジャンケンなどの画像の挿入、レイアウトの配置について学びます。</br>
+</h4>
+</div>
+<div class="fix-background janken-win">
+<h2>Win</h2>
+<h3>
+</br>
+  ・  勝ち条件の関数</br>
+  ・  組み込みボタン</br>
+</br>
+</h3>
+<h4>
+定数や変数、状態変数、関数、クラス、インスタンス化といったプログラミングの基本的概念について学びます。</br>
+勝ち条件の組み込みボタンについて実装し、その結果を表示させます。</br>
+</h4>
+</div>
+<div class="fix-background janken-lose">
+<h2>Lose</h2>
+<h3>
+</br>
+  ・  負け条件の関数</br>
+  ・  組み込みボタン</br>
+</br>
+</h3>
+<h4>
+for文やif文、モディファイアなどの概念も学べます。</br>
+負け条件の組み込みボタンについて実装し、その結果を表示させます。</br>
+</h4>
+</div>
+<div class="fix-background janken-fifty">
+<h2>Draw</h2>
+<h3>
+</br>
+  ・  引き分け条件の関数</br>
+  ・  組み込みボタン</br>
+</br>
+</h3>
+<h4>
+コンピュータの関数やクラスの実装をします。</br>
+引き分け条件の組み込みボタンについて実装し、その結果を表示させます。</br>
+</h4>
+</div>
+<div class="fix-background janken-code">
+<h2>Course</h2>
+<h3>
+</br>
+  ・  全12回</br>
+  ・  Zoomによるオンライン授業</br>
+</br>
+</h3>
+<h4>
+SwiftUIを扱うにあたり、Xcode 11以降のインストールが必要なため、Mojave (10.14.4) 以降のmacOSが搭載されているMacbookやiMacなどが必要です。</br>
+</h4>
+</div>
+</div>
+<!--/#about-->
+
+<div class="bg2">
+<h6>Contact</h6>
+</div>
+
+<div id="contact">
+
+<p class="c"><a href="index.html"><img src="images/K_Code(black_transparency).png" alt="" width="150px"></a></p>
+
+<nav id="menubar_last">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+
+<p>
+Mail: kaito_narimoto@icloud.com<br>
+対応時間: AM9:00〜PM10:00</p>
+
+</div>
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+
+<footer>
+<small>Copyright&copy; K.Code All Rights Reserved.</small>
+<span class="pr">Web Design: Kaito Narimoto</span>
+</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<!--<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>-->
+
+</body>
+</html>

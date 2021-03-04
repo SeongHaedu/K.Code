@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>K.Code</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="K.Code">
+<meta name="keywords" content="K.Code,プログラミング,プログラミングスクール,学生,学生から始めるプログラミング,学生から始められるプログラミングスクール,学生用プログラミングスクール,学生向けのプログラミングスクール,中学,高校,大学">
+<link rel="stylesheet" href="css/style_about_online_lesson.css">
+<link rel="stylesheet" href="css/slide.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+var windowH = $(window).height(),
+scrollY = $(window).scrollTop();
+$('#logo img, #about-kcode-other h1, #about-kcode-other h2, #about-kcode-other h3, #about-kcode-other h4').each(function() {
+  var elPosition = $(this).offset().top;
+  if (scrollY > elPosition - windowH) {
+    $(this).addClass("fadein");
+  }else{
+    $(this).removeClass("fadein");
+  }
+});
+});
+
+</script>
+<!--フェードイン-->
+
+</head>
+
+<body>
+
+<header>
+
+<!--スライドショー-->
+<aside id="mainimg">
+<div class="slide1">slide1</div>
+<div class="slide2">slide2</div>
+<div class="slide3">slide3</div>
+<div class="slide4">slide4</div>
+</aside>
+
+
+<nav id="menubar">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+</header>
+
+
+
+<div id="container">
+
+<div id="contents">
+
+
+<div class="fix-background Online_Lesson">
+<div id="about-kcode">
+<h1>Online Lesson</h1>
+<h2>
+オンラインミーティングツールZoomを用いた個別授業になっています。</br>
+ポストコロナ社会でも、Zoomを活用することで、リモートでプログラミングを安心、安全に学んで頂けます。</br>
+また、リモート学習により、場所や時間を選ばない学習方法を身につけることができます。</br>
+</h2>
+</div>
+</div>
+<div id="about-kcode-other">
+<div class="fix-background Online_Lesson_Text">
+<h3>Text</h3>
+<h4>
+プログラムやその概念などをフローに従って作成したテキストになります。</br>
+なので、各授業後に復習のしやすいテキストになっております。</br>
+また、復習の段階でわからないことがあればいつでも連絡をしてください。お待ちしております。</br>
+</h4>
+</div>
+<div class="fix-background Online_Lesson_Practice">
+<h1>Practice</h1>
+<h2>
+授業の合間に演習をする時間を設けていますので、プログラミングの能力がより定着しやすくなり、理解力の促進へ繋がります。</br>
+演習でわからない部分が出てきましたら、適宜対応致します。</br>
+演習の解答も用意しておりますので、復習の機会にご活用ください。
+</h2>
+</div>
+</div>
+
+<div class="bg2">
+<h5>Contact</h5>
+</div>
+<!--/#about-->
+
+
+<div id="contact">
+
+<p class="c"><a href="index.html"><img src="images/K_Code(black_transparency).png" alt="" width="150px"></a></p>
+
+<nav id="menubar_last">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+
+<p>
+Mail: kaito_narimoto@icloud.com<br>
+対応時間: AM9:00〜PM10:00</p>
+
+</div>
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+
+<footer>
+<small>Copyright&copy; K.Code All Rights Reserved.</small>
+<span class="pr">Web Design: Kaito Narimoto</span>
+</footer>
+<!--<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>-->
+
+</body>
+</html>

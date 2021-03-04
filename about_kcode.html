@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>K.Code</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="K.Code">
+<meta name="keywords" content="K.Code,プログラミング,プログラミングスクール,学生,学生から始めるプログラミング,学生から始められるプログラミングスクール,学生用プログラミングスクール,学生向けのプログラミングスクール,中学,高校,大学">
+<link rel="stylesheet" href="css/style_about_kcode.css">
+<link rel="stylesheet" href="css/slide.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+var windowH = $(window).height(),
+scrollY = $(window).scrollTop();
+$('#logo img, #about-kcode-other h1, #about-kcode-other h2, #about-kcode-other h3, #about-kcode-other h4, #contents h5, #contents h6').each(function() {
+  var elPosition = $(this).offset().top;
+  if (scrollY > elPosition - windowH) {
+    $(this).addClass("fadein");
+  }else{
+    $(this).removeClass("fadein");
+  }
+});
+});
+
+</script>
+<!--フェードイン-->
+
+</head>
+
+<body>
+
+<header>
+
+<!--スライドショー-->
+<aside id="mainimg">
+<div class="slide1">slide1</div>
+<div class="slide2">slide2</div>
+<div class="slide3">slide3</div>
+<div class="slide4">slide4</div>
+</aside>
+
+
+<nav id="menubar">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+</header>
+
+
+
+<div id="container">
+
+<div id="contents">
+
+
+<div class="fix-background KCode">
+<div id="about-kcode">
+<h1>K.Codeとは</h1>
+<h2>
+学生向けのオンライン型プログラミングスクールです。</br>
+ポストコロナ社会でも、オンラインミーティングツールを活用することで、小、中、高、大学生までの全ての学生にリモートでプログラミングを安心、安全に学んで頂けます。</br>
+K.Codeでは以下の分野について教えていきたいと考えています。</br>
+ ・ iPhoneのアプリ開発</br>
+ ・ データ分析</br>
+ ・ 人工知能
+</h2>
+</div>
+</div>
+<div id="about-kcode-other">
+<div class="fix-background Programing">
+<h3>背景</h3>
+<h4>
+現在、コロナウイルスの影響で小、中、高、大学生がそれぞれの学校で勉強する機会が減っており、学生の学習能力の低下が危惧されています。</br>
+そこで、「全ての教科のうち、僕が教えられる教科は何かないか？」と考え、趣味で勉強してきたプログラミングに着目しました。</br>
+このようなポストコロナ社会でも、プログラミングに興味を持つ全ての学生に、プログラミングの面白さや楽しさ、便利さなどの学ぶ機会を提供するために、このグループを立ち上げました。</br>
+</h4>
+</div>
+<div class="fix-background Bridge">
+<h1>学べること</h1>
+<h2>
+このグループの目標は、学生のうちからiPhoneのアプリを開発できるエンジニア (iOSエンジニア) や人工知能を開発できるエンジニア (AIエンジニア) になる「きっかけ」を掴んで頂けたらなと考えています。</br>
+また、この「きっかけ」から将来的に日本のICT業界を先導するエンジニアになってもらえることを心より祈っております。</br>
+iOSエンジニアやAIエンジニアは、消費者やユーザーに直接届くサービスを日々つくるので、研究や仕事、趣味、勉学にきっとやりがいを感じられるはずです。</br>
+学生のうちからプログラミングを始めたい方、今日から初めてみませんか?</br>
+入会をご希望の方はメールにてご連絡下さい。</br>
+※入会費は無料です。</br>
+</h2>
+</div>
+</div>
+
+<div class="bg2">
+<div id="logo"><img src="images/about_kcode/Kperson.png"></div>
+
+<h5 class="head">
+成本 海斗</br>
+Narimoto Kaito
+</h5>
+<h6>
+  ・ 1998年 生まれ 大阪府在住
+</h6>
+<h5>
+所属
+</h5>
+<h6>
+  ・ 同志社大学 生命医科学部 医工学科 ティッシュエンジニアリング研究室
+</h6>
+<h5>
+スキル/資格
+</h5>
+<h6>
+  ・ Python, SwiftUI, Java, HTML, CSS, Git</br>
+  ・ Deep Learning</br>
+  ・ Machine Learning</br>
+  ・ 3D Computer Aided Design</br>
+  ・ Robot Operating System</br>
+  ・ Deep Learning for General - Japan Deep Learning Association</br>
+</br>
+</h6>
+
+</div>
+<!--/#about-->
+
+
+<div id="contact">
+
+<p class="c"><a href="index.html"><img src="images/K_Code(black_transparency).png" alt="" width="150px"></a></p>
+
+<nav id="menubar_last">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+
+<p>
+Mail: kaito_narimoto@icloud.com<br>
+対応時間: AM9:00〜PM10:00</p>
+
+</div>
+
+
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+
+<footer>
+<small>Copyright&copy; K.Code All Rights Reserved.</small>
+<span class="pr">Web Design: Kaito Narimoto</span>
+</footer>
+<!--<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>-->
+
+</body>
+</html>
