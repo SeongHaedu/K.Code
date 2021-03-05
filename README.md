@@ -21,10 +21,6 @@ This web site has two courses.
 Environments under [Atom for Mac](https://atom.io/) is tested.
 
  
-# Note
- 
-I don't test environments under Linux and Mac.
- 
 # Author
  
 * Kaito Narimoto
