@@ -8,13 +8,10 @@ For example, you can learn how to create some iPhone Apps.
  
 # Features
  
-Physics_Sim_Py used [pyxel](https://github.com/kitao/pyxel) only.
- 
-```python
-import pyxel
-```
-[Pyxel](https://github.com/kitao/pyxel) is a retro game engine for Python.
-You can feel free to enjoy making pixel art style physics simulations.
+This web site has two courses.
+
+1. Cafe Latte Order App
+2. Janken App
  
 # Requirement
  
