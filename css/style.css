@@ -874,13 +874,18 @@ header #logo img {
 
 .swiftui-CafeLatte {
 	background-image: url(../images/course_cafe_latte/cafe_detail_iphone.png);
-	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-top: 50px;
+	padding-bottom: 10px;
 }
 .swiftui-Janken {
 	background-image: url(../images/course_janken/janken_win_iphone.png);
-	padding-top: 150px;
-	padding-bottom: 150px;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+.KCode_Contact {
+	background-image: url(../images/about_kcode/KCode_home.png);
+	opacity: 1.0;
+	transition: all 0.5s;
 }
 /*Serviceページ
 ---------------------------------------------------------------------------*/
