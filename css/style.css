@@ -50,14 +50,14 @@ header {
 	height: 100%;
 	overflow-x: hidden;
 	position: relative;
-	background: url(../images/background.jpg) no-repeat center center / cover;	/*背景画像の読み込み*/
+
 }
 /*ロゴ画像*/
 header #logo img {
 	display: block;
-	width: 12%;	/*画像の幅*/
+	width: 22%;	/*画像の幅*/
 	position: absolute;
-	left: 44%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	left: 39%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
 	bottom: 50%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 }
 
@@ -66,7 +66,7 @@ header #logo img {
 /*メニューブロック全体への指定*/
 #menubar {
 	position: absolute;
-	bottom: 20%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	bottom: 10%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 	left: 11px;
 	width: 100%;
 	text-align: center;
@@ -82,20 +82,20 @@ header #logo img {
 }
 #menubar li a {
 	text-decoration: none;display: block;text-align: center;
-	width: 200px;	/*メニューの幅*/
-	font-size: 35px;
-	color: #ffffff;	/*文字色*/
+	width: 250px;	/*メニューの幅*/
+	font-size: 45px;
+	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
 }
 /*マウスオン時の指定*/
 #menubar li a:hover {
-	border-bottom: 2px solid #ffffff;	/*下線の幅、線種、色*/
+	border-bottom: 2px solid #000;	/*下線の幅、線種、色*/
 	letter-spacing: 0.1em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
 }
 #menubar_last {
 	position: absolute;
-	bottom: 300px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	bottom: 100px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 	left: 11px;
 	width: 100%;
 	text-align: center;
@@ -111,15 +111,15 @@ header #logo img {
 }
 #menubar_last li a {
 	text-decoration: none;display: block;text-align: center;
-	width: 155px;	/*メニューの幅*/
-	font-size: 24px;
-	color: #ffffff;	/*文字色*/
+	width: 250px;	/*メニューの幅*/
+	font-size: 45px;
+	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
 }
 /*マウスオン時の指定*/
 #menubar_last li a:hover {
-	border-bottom: 2px solid #ffffff;	/*下線の幅、線種、色*/
+	border-bottom: 2px solid #000;	/*下線の幅、線種、色*/
 	letter-spacing: 0.1em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
 }
 /*上部固定メニューを初期設定では非表示にする*/
@@ -433,7 +433,15 @@ body.is-fixed .nav-fix-pos {
 #contact p {
 	font-size: 23px;
 	text-align: center;
-	padding-top: 400px
+	padding-top: 360px;
+	color: #000;
+}
+#contact img {
+	display: block;
+	width: 22%;	/*画像の幅*/
+	position: absolute;
+	left: 39%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	bottom: 650px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 }
 
 /*Serviceページ
@@ -499,7 +507,7 @@ footer {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background: #ffffff;	/*背景色*/
+	background: #d3d3d3;	/*背景色*/
 	color: #000000;		/*文字色*/
 	font-size: 85%;		/*文字サイズ*/
 	position: relative;
@@ -693,9 +701,9 @@ header #logo img {
 
 #menubar li a {
 	text-decoration: none;display: block;text-align: center;
-	width: 140px;	/*メニューの幅*/
-	font-size: 21px;
-	color: #ffffff;	/*文字色*/
+	width: 150px;	/*メニューの幅*/
+	font-size: 30px;
+	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
 }
@@ -746,15 +754,23 @@ header #logo img {
 ---------------------------------------------------------------------------*/
 /*ロゴ画像*/
 header #logo img {
-	width: 30%;	/*画像の幅*/
-	left: 35%;	/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	width: 40%;	/*画像の幅*/
+	left: 33%;	/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
 }
 
 #menubar li a {
 	text-decoration: none;display: block;text-align: center;
 	width: 140px;	/*メニューの幅*/
 	font-size: 19px;
-	color: #ffffff;	/*文字色*/
+	color: #000;	/*文字色*/
+	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
+	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
+}
+#menubar_last li a {
+	text-decoration: none;display: block;text-align: center;
+	width: 140px;	/*メニューの幅*/
+	font-size: 19px;
+	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
 }
@@ -798,7 +814,43 @@ header #logo img {
 	padding: 5%;	/*画像と円形との間の余白*/
 	left: 54%;
 }
+@keyframes fadein-bottom {
+   0% {
+      opacity: 0;
+      transform: translateY(0);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+/*フェードイン*/
+.fadein {
+	opacity: 1;
+	animation-name: fadein-bottom;
+	animation-delay: 0S;
+	animation-duration: 0s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+}
+.fix-background {
+	min-height: 100%;
+	background-attachment:scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
+.swiftui-CafeLatte {
+	background-image: url(../images/course_cafe_latte/cafe_detail_iphone.png);
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.swiftui-Janken {
+	background-image: url(../images/course_janken/janken_win.png);
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
 /*Serviceページ
 ---------------------------------------------------------------------------*/
 /*h4見出しの設定*/
