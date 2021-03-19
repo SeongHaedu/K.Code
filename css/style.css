@@ -762,7 +762,7 @@ header #logo img {
 /*ロゴ画像*/
 header #logo img {
 	width: 40%;	/*画像の幅*/
-	left: 33%;	/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	left: 31%;	/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
 }
 
 #menubar li a {
@@ -773,6 +773,10 @@ header #logo img {
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
 }
+#menubar li a:hover {
+	border-bottom: 2px solid #fff;	/*下線の幅、線種、色*/
+	letter-spacing: 0em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
+}
 #menubar_last li a {
 	text-decoration: none;display: block;text-align: center;
 	width: 140px;	/*メニューの幅*/
@@ -780,6 +784,10 @@ header #logo img {
 	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
+}
+#menubar_last li a:hover {
+	border-bottom: 2px solid #fff;	/*下線の幅、線種、色*/
+	letter-spacing: 0em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
 }
 
 /*コンテナー（headerとfooterをのぞくブロックを囲むブロック）
@@ -832,17 +840,17 @@ header #logo img {
 	box-shadow: 0px 10px 0px 0px #fff,0px 15px 5px 0px rgba(0,0,0,0.2);
 }
 #contact {
-	height: 850px;
+	height: 700px;
 }
 #contact p {
-	font-size: 12px;
-	padding-top: 370px;
+	font-size: 14px;
+	padding-top: 300px;
 }
 #contact img {
 	display: block;
 	width: 40%;	/*画像の幅*/
 	position: absolute;
-	left: 33%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	left: 31%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
 	bottom: 450px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 }
 @keyframes fadein-bottom {
@@ -883,7 +891,7 @@ header #logo img {
 	padding-bottom: 50px;
 }
 .KCode_Contact {
-	background-image: url(../images/about_kcode/KCode_home.png);
+	background-image: url(../images/about_kcode/KCode_home_short.png);
 	opacity: 1.0;
 	transition: all 0.5s;
 }
