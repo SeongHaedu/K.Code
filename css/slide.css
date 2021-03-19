@@ -47,7 +47,7 @@
 #mainimg {
 	clear: left;
 	text-indent: -9999px;
-	position: fixed;	/*スクロールしても固定表示させる指定*/
+	position: absolute;	/*スクロールしても固定表示させる指定*/
 	top: 0px;
 	margin: 0;
 	padding: 0;
