@@ -70,26 +70,26 @@
 .slide1 {
 	height: 100%;
 	overflow-x: hidden;
-	background: url(../images/KCode_top_opa.png) no-repeat center center/cover;
+	background: url(../images/KCode_top.png) no-repeat center center/cover;
 	animation-name: slide1;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*２枚目*/
 .slide2 {
 	height: 100%;
 	overflow-x: hidden;
-	background: url(../images/imac1.png) no-repeat center center/cover;
+	background: url(../images/KCode_top.png) no-repeat center center/cover;
 	animation-name: slide2;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 /*３枚目*/
 .slide3 {
 	height: 100%;
 	overflow-x: hidden;
-	background: url(../images/coffee_macbook1.jpg) no-repeat center center/cover;
+	background: url(../images/KCode_top.jpg) no-repeat center center/cover;
 	animation-name: slide3;
 }
 .slide4 {
 	height: 100%;
 	overflow-x: hidden;
-	background: url(../images/KCode_top_opa.png) no-repeat center center/cover;
+	background: url(../images/KCode_top.png) no-repeat center center/cover;
 	animation-name: slide4;		/*上で設定しているキーフレーム（keyframes）の名前*/
 }
