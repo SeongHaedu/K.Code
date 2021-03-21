@@ -83,18 +83,18 @@ header h1 {
 	text-decoration: none;display: block;text-align: center;
 	width: 200px;	/*メニューの幅*/
 	font-size: 35px;
-	color: #ffffff;	/*文字色*/
+	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
 }
 /*マウスオン時の指定*/
 #menubar li a:hover {
-	border-bottom: 2px solid #ffffff;	/*下線の幅、線種、色*/
+	border-bottom: 2px solid #000;	/*下線の幅、線種、色*/
 	letter-spacing: 0.1em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
 }
 #menubar_last {
 	position: absolute;
-	bottom: 160px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	bottom: 110px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 	left: 11px;
 	width: 100%;
 	text-align: center;
@@ -112,13 +112,13 @@ header h1 {
 	text-decoration: none;display: block;text-align: center;
 	width: 155px;	/*メニューの幅*/
 	font-size: 24px;
-	color: #ffffff;	/*文字色*/
+	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
 }
 /*マウスオン時の指定*/
 #menubar_last li a:hover {
-	border-bottom: 2px solid #ffffff;	/*下線の幅、線種、色*/
+	border-bottom: 2px solid #000;	/*下線の幅、線種、色*/
 	letter-spacing: 0.1em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
 }
 /*上部固定メニューを初期設定では非表示にする*/
@@ -250,10 +250,10 @@ body.is-fixed .nav-fix-pos {
 
 /*コンテンツ内にあるp(段落)タグ設定*/
 #contact p {
-	font-size: 23px;
+	font-size: 19px;
 	text-align: center;
-	color: #ffffff;
-	padding-top: 170px
+	color: #000;
+	padding-top: 310px
 }
 /*他。微調整。*/
 #contents p + p {
@@ -271,7 +271,7 @@ body.is-fixed .nav-fix-pos {
 	animation-fill-mode: both;
 }
 #contact {
-	height: 600px;
+	height: 800px;
 }
 /*コンテンツ内にある固定バックグラウンド*/
 .fix-background {
@@ -281,6 +281,10 @@ body.is-fixed .nav-fix-pos {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.White {
+	background-image: url(../images/white.png);
+}
+
 .Bridge {
 	background-image: url(../images/about_kcode/bridge.jpg);
 	padding-top: 80px;
@@ -295,6 +299,13 @@ body.is-fixed .nav-fix-pos {
 	background-image: url(../images/about_kcode/code.png);
 	padding-top: 80px;
 	padding-bottom: 80px;
+}
+.KCode_Contact {
+	background-image: url(../images/KCode_top.png);
+	padding-top: 0px;
+	padding-bottom: 0px;
+	opacity: 1.0;
+	transition: all 0.5s;
 }
 /*白色ボックス*/
 /*clearfix（変更不要）*/
@@ -323,7 +334,7 @@ footer {
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background: #ffffff;	/*背景色*/
+	background: #d3d3d3;	/*背景色*/
 	color: #000000;		/*文字色*/
 	font-size: 85%;		/*文字サイズ*/
 	position: relative;
@@ -452,7 +463,6 @@ header #logo img {
 	text-decoration: none;display: block;text-align: center;
 	width: 140px;	/*メニューの幅*/
 	font-size: 21px;
-	color: #ffffff;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
 }
@@ -475,17 +485,25 @@ header #logo img {
 	text-decoration: none;display: block;text-align: center;
 	width: 80px;	/*メニューの幅*/
 	font-size: 16px;
-	color: #ffffff;	/*文字色*/
+	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
+}
+#menubar li a:hover {
+	border-bottom: 2px solid #fff;	/*下線の幅、線種、色*/
+	letter-spacing: 0em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
 }
 #menubar_last li a {
 	text-decoration: none;display: block;text-align: center;
 	width: 80px;	/*メニューの幅*/
 	font-size: 16px;
-	color: #ffffff;	/*文字色*/
+	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
+}
+#menubar_last li a:hover {
+	border-bottom: 2px solid #fff;	/*下線の幅、線種、色*/
+	letter-spacing: 0em;			/*文字間隔を少しだけ広くする指定。そのままがいいならこの１行を削除。*/
 }
 
 /*コンテナー（headerとfooterをのぞくブロックを囲むブロック）
@@ -507,7 +525,7 @@ header #logo img {
 	font-size: 12px;
 }
 #contents h1 {
-	font-size: 16px;	/*文字サイズ*/
+	font-size: 20px;	/*文字サイズ*/
 	width: 90%;
 	left: 10px
 }
@@ -518,7 +536,7 @@ header #logo img {
 }
 /*コンテンツ内にあるh3(見出し)タグの指定*/
 #contents h3 {
-	font-size: 16px;	/*文字サイズ*/
+	font-size: 20px;	/*文字サイズ*/
 	width: 90%;
 	left: 10px
 }
@@ -540,9 +558,65 @@ header #logo img {
 	width: 100%;
 	left: 15px
 }
-
-
-
+#about-kcode {
+	animation-delay: 0S;
+	animation-duration: 0s;
+}
+#contact {
+	height: 700px;
+}
+#contact p {
+	font-size: 14px;
+	padding-top: 300px;
+}
+#contact img {
+	display: block;
+	width: 40%;	/*画像の幅*/
+	position: absolute;
+	left: 31%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	bottom: 450px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+}
+@keyframes fadein-bottom {
+   0% {
+      opacity: 0;
+      transform: translateY(0);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+/*フェードイン*/
+.fadein {
+	opacity: 1;
+	animation-name: fadein-bottom;
+	animation-delay: 0S;
+	animation-duration: 0s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+}
+.fix-background {
+	min-height: 100%;
+	background-attachment:scroll;
+	background-size: cover;
+}
+.Bridge {
+	background-image: url(../images/about_kcode/bridge.jpg);
+	padding-top: 0px;
+}
+.KCode {
+	background-image: url(../images/about_kcode/about_KCode_short.png);
+	padding-top: 0px;
+}
+.Programing {
+	background-image: url(../images/about_kcode/rcode.png);
+	padding-top: 0px;
+}
+.KCode_Contact {
+	background-image: url(../images/about_kcode/KCode_home_short.png);
+	opacity: 1.0;
+	transition: all 0.5s;
+}
 /*ul.disc,olタグ
 ---------------------------------------------------------------------------*/
 ul.disc {
