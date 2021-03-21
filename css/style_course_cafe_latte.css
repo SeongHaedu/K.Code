@@ -65,7 +65,7 @@ header h1 {
 /*メニューブロック全体への指定*/
 #menubar {
 	position: absolute;
-	bottom: 10%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	bottom: 1%;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 	left: 11px;
 	width: 100%;
 	text-align: center;
@@ -94,7 +94,7 @@ header h1 {
 }
 #menubar_last {
 	position: absolute;
-	bottom: 110px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	bottom: 130px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 	left: 11px;
 	width: 100%;
 	text-align: center;
@@ -110,8 +110,8 @@ header h1 {
 }
 #menubar_last li a {
 	text-decoration: none;display: block;text-align: center;
-	width: 155px;	/*メニューの幅*/
-	font-size: 24px;
+	width: 200px;	/*メニューの幅*/
+	font-size: 30px;
 	color: #000;	/*文字色*/
 	border-bottom: 2px solid transparent;	/*下線の幅、線種、色。transparentは透明の事。*/
 	padding-bottom: 7px;	/*下線と文字の間にとる余白*/
@@ -219,6 +219,87 @@ body.is-fixed .nav-fix-pos {
 	animation-timing-function: ease-out;
 	animation-fill-mode: both;
 }
+
+#contents h5 {
+	color: #ffffff;
+	font-size: 30px;	/*文字サイズ*/
+	position: relative;
+	top: 0px;	/*上に100px移動させる設定*/
+	left: 45%;
+	text-align: center;
+	width: 50%;
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+/*コンテンツ内のh2見出しにclass="img"をつけた場合（各ブロック冒頭の円形のアクセント用イラスト）*/
+#contents h5 img {
+	border-radius: 20%;
+}
+#contents h5.icon {
+	transition: 1.0s;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	width: 120px;		/*画像幅*/
+	height: 120px;
+	padding: 3%;	/*画像と円形との間の余白*/
+	top: 0px;	/*上に100px移動させる設定*/
+	left: 63%;
+	color: #fff;
+	background: #b4a282;
+	border-radius: 50%;	/*円形にする指定。外すと四角形になる。10pxなどにすると角が丸くなった四角形になる。*/
+	box-shadow: 0px 10px 0px 0px #fff,0px 20px 5px 0px rgba(0,0,0,0.2);	/*２つの影を指定。前半は白いくっきりした影、２つ目は薄い黒っぽい影。*/
+}
+
+/*上の円形イラスト内のテキスト*/
+#contents h5.icon:hover {
+	transition: 1.0s;
+	background: #cd853f;
+	box-shadow: 0px 10px 0px 0px #c0c0c0,0px 15px 5px 0px rgba(0,0,0,0.2);
+}
+
+#contents h6 {
+	color: #000;
+	font-size: 45px;	/*文字サイズ*/
+	letter-spacing: 0.2em;
+	position: relative;
+	padding-top: 80px;	/*上に100px移動させる設定*/
+	text-align: center;
+	width: 100%;
+
+}
+
+
+/*コンテンツ内にあるp(段落)タグ設定*/
+#contents p {
+	padding: 0px 20px 20px;	/*上、左右、下への余白*/
+	color: #fff
+}
+/*他。微調整。*/
+#contents p + p {
+	margin-top: -5px;
+}
+#contents h2 + p,
+#contents h3 + p {
+	margin-top: -10px;
+}
+
+#contact {
+	height: 700px;
+}
+#contact p {
+	font-size: 23px;
+	text-align: center;
+	padding-top: 210px;
+	color: #000;
+}
+#contact img {
+	display: block;
+	width: 19%;	/*画像の幅*/
+	position: absolute;
+	left: 40%;		/*ロゴやメニューが入っているブロックに対して、左からの配置場所の指定。*/
+	bottom: 550px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+}
 /*コンテンツ内にある固定バックグラウンド*/
 .fix-background {
 	min-height: 100%;
@@ -305,80 +386,6 @@ body.is-fixed .nav-fix-pos {
 	background: #b4a282 !important;
 }
 
-
-#contents h5 {
-	color: #ffffff;
-	font-size: 30px;	/*文字サイズ*/
-	position: relative;
-	top: 0px;	/*上に100px移動させる設定*/
-	left: 45%;
-	text-align: center;
-	width: 50%;
-	padding-top: 100px;
-	padding-bottom: 60px;
-}
-/*コンテンツ内のh2見出しにclass="img"をつけた場合（各ブロック冒頭の円形のアクセント用イラスト）*/
-#contents h5 img {
-	border-radius: 20%;
-}
-#contents h5.icon {
-	transition: 1.0s;
-	display: block;
-	overflow: hidden;
-	margin: 0;
-	width: 120px;		/*画像幅*/
-	height: 120px;
-	padding: 3%;	/*画像と円形との間の余白*/
-	top: 0px;	/*上に100px移動させる設定*/
-	left: 63%;
-	color: #fff;
-	background: #b4a282;
-	border-radius: 50%;	/*円形にする指定。外すと四角形になる。10pxなどにすると角が丸くなった四角形になる。*/
-	box-shadow: 0px 10px 0px 0px #fff,0px 20px 5px 0px rgba(0,0,0,0.2);	/*２つの影を指定。前半は白いくっきりした影、２つ目は薄い黒っぽい影。*/
-}
-
-/*上の円形イラスト内のテキスト*/
-#contents h5.icon:hover {
-	transition: 1.0s;
-	background: #cd853f;
-	box-shadow: 0px 10px 0px 0px #c0c0c0,0px 15px 5px 0px rgba(0,0,0,0.2);
-}
-
-#contents h6 {
-	color: #000;
-	font-size: 45px;	/*文字サイズ*/
-	letter-spacing: 0.2em;
-	position: relative;
-	padding-top: 80px;	/*上に100px移動させる設定*/
-	text-align: center;
-	width: 100%;
-
-}
-
-
-/*コンテンツ内にあるp(段落)タグ設定*/
-#contents p {
-	padding: 0px 20px 20px;	/*上、左右、下への余白*/
-	color: #fff
-}
-/*他。微調整。*/
-#contents p + p {
-	margin-top: -5px;
-}
-#contents h2 + p,
-#contents h3 + p {
-	margin-top: -10px;
-}
-
-#contact {
-	height: 1100px;
-}
-#contact p {
-	font-size: 19px;
-	text-align: center;
-	color: #000;
-	padding-top: 390px
-}
 
 
 
