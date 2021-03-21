@@ -286,13 +286,23 @@ body.is-fixed .nav-fix-pos {
 }
 
 /*白色ボックス*/
-
+/*clearfix（変更不要）*/
+.bg2:after {
+    content: "";display: block;clear: both;
+}
+/*リンクテキストの文字色*/
+.bg2 a:hover {
+	color: #ffffff;
+}
 /*bg2ブロック*/
 .bg2 {
-	min-height: 200px;
+	min-height: 100%;
 	background: #ffff;	/*背景色*/
 	color: #ffff;			/*文字色*/
-	padding: 0 15% 5px;
+}
+/*bg2ブロック内の円形イラストの背景色*/
+.bg2 h2.img {
+	background: #b4a282 !important;
 }
 
 
@@ -633,7 +643,7 @@ ul.disc {padding: 0em 25px 15px 40px;list-style: disc;}
 }
 #contact p {
 	font-size: 14px;
-	padding-top: 300px;
+	padding-top: 250px;
 }
 #contact img {
 	display: block;
@@ -651,6 +661,12 @@ ul.disc {padding: 0em 25px 15px 40px;list-style: disc;}
       opacity: 1;
       transform: translateY(0);
    }
+}
+.head {
+	height: 270px
+}
+.bg2 {
+	height: 110px;
 }
 /*フェードイン*/
 .fadein {

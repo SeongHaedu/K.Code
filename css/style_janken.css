@@ -95,7 +95,7 @@ header h1 {
 
 #menubar_last {
 	position: absolute;
-	bottom: 160px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
+	bottom: 110px;	/*ロゴやメニューが入っているブロックに対して、下からの配置場所の指定。*/
 	left: 11px;
 	width: 100%;
 	text-align: center;
@@ -646,13 +646,16 @@ ul.disc {padding: 0em 25px 15px 40px;list-style: disc;}
 }
 #contents h6 {
 	font-size: 25px;	/*文字サイズ*/
+	width: 90%;
+	left: 10px;
+	padding-top: 40px;
 }
 #contact {
 	height: 700px;
 }
 #contact p {
 	font-size: 14px;
-	padding-top: 300px;
+	padding-top: 250px;
 }
 #contact img {
 	display: block;
@@ -670,6 +673,9 @@ ul.disc {padding: 0em 25px 15px 40px;list-style: disc;}
       opacity: 1;
       transform: translateY(0);
    }
+}
+.bg2 {
+	height: 110px;
 }
 /*フェードイン*/
 .fadein {
