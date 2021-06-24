@@ -24,6 +24,7 @@ Environments under [Atom for Mac](https://atom.io/) is tested.
 # Author
  
 * Kaito Narimoto
+* kaito_narimoto@icloud.com
  
 # License
  
