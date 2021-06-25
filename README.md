@@ -10,15 +10,13 @@ We provide students with an opportunity to learn some programming languages thro
 For example, you can learn how to create some iPhone Apps.
  
  
-# Features
+# Courses
  
 This web site has two courses.
 
 1. Cafe Latte Order App
 2. Janken App
-
- 
-Environments under [Atom for Mac](https://atom.io/) is tested.
+3. Probaseball Player Directory App
 
  
 # Author
