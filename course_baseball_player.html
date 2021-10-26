@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="K.Code">
 <meta name="keywords" content="K.Code,プログラミング,プログラミングスクール,学生,学生から始めるプログラミング,学生から始められるプログラミングスクール,学生用プログラミングスクール,学生向けのプログラミングスクール,中学,高校,大学">
-<link rel="stylesheet" href="css/style_janken.css">
+<link rel="stylesheet" href="css/style_course_baseball.css">
 <link rel="stylesheet" href="css/slide.css">
 <script src="js/openclose.js"></script>
 <script src="js/fixmenu.js"></script>
@@ -19,7 +19,7 @@
 $(window).scroll(function() {
 var windowH = $(window).height(),
 scrollY = $(window).scrollTop();
-$('#janken-app-other h2, #janken-app-other h3, #janken-app-other h4').each(function() {
+$('#baseball-player-app-other h2, #baseball-player-app-other h3, #baseball-player-app-other h4').each(function() {
   var elPosition = $(this).offset().top;
   if (scrollY > elPosition - windowH) {
     $(this).addClass("fadein");
@@ -39,7 +39,6 @@ $('#janken-app-other h2, #janken-app-other h3, #janken-app-other h4').each(funct
 
 <header>
 
-
 <div class="fix-background White">
 
 <nav id="menubar">
@@ -47,7 +46,6 @@ $('#janken-app-other h2, #janken-app-other h3, #janken-app-other h4').each(funct
 <li><a href="index.html#about">About</a></li>
 <li><a href="index.html#course">Course</a></li>
 <li><a href="index.html#schedule">Schedule</a></li>
-
 </ul>
 </nav>
 </div>
@@ -60,88 +58,91 @@ $('#janken-app-other h2, #janken-app-other h3, #janken-app-other h4').each(funct
 <div id="contents">
 
 
-<div class="fix-background janken-screen">
-<div id="janken-app">
-<h2>Janken App</h2>
+<div class="fix-background baseball-screen">
+<div id="baseball-player-app">
+<h2>Baseball Player App</h2>
 <h3>
 </br>
-Level ★★☆☆☆
+Level ★★★☆☆
 </h3>
 <h4>
 </br>
-iPhoneのアプリを作る言語「SwiftUI」を使ってジャンケンアプリを作成します。</br>
-レイアウトの配置、ボタン、画像の挿入、組み込みプログラムなどの機能を勉強していきます。</br>
-この授業はiPhoneアプリを作るにあたり、SwiftUIの基礎を深く扱っております。</br>
+iPhoneのアプリを作る言語「SwiftUI」を使ってプロ野球名鑑アプリを作成します。</br>
+レイアウトの配置、画面遷移、条件分岐や構文、Webスクレイピング、JSONファイルの使用方法などの機能を勉強していきます。</br>
+この授業はiPhoneアプリを作るにあたり、基礎から応用まで幅広く扱っております。</br>
 </h4>
 </div>
 </div>
 
-<div id="janken-app-other">
-<div class="fix-background janken-home">
-<h2>Janken</h2>
+<div id="baseball-player-app-other">
+<div class="fix-background baseball-home">
+<h2>Home</h2>
 <h3>
 </br>
-  ・  画像の挿入</br>
+  ・  球団のロゴの挿入</br>
+  ・  トップメニューの遷移</br>
+  ・  カテゴリレイアウトの配置</br>
+  ・  スクロール</br>
+</br>
+</h3>
+<h4>
+好きな野球球団の写真を入れてデザインの変更をすることができます。</br>
+User Interface (UI) の基本であるレイアウトの配置、画面のスクロール方向、画面の遷移について学びます。</br>
+</h4>
+</div>
+<div class="fix-background baseball-yakult-list">
+<h2>List</h2>
+<h3>
+</br>
+  ・  JSONファイルにおけるリストの作成</br>
+  ・  画面遷移</br>
   ・  レイアウトの配置</br>
 </br>
 </h3>
 <h4>
-User Interface (UI) の基本であるジャンケンなどの画像の挿入、レイアウトの配置について学びます。</br>
+Webスクレイピングにより取得したJSONファイルを使用してリストを実装します。</br>
+iPhoneのアプリには欠かせないリストの作成方法やJSONファイルとSwiftUIの相互関係について学ぶことができます。</br>
 </h4>
 </div>
-<div class="fix-background janken-win">
-<h2>Win</h2>
+<div class="fix-background baseball-yakult-list2">
+<h2>List</h2>
 <h3>
 </br>
-  ・  勝ち条件の関数</br>
-  ・  組み込みボタン</br>
+  ・  リストにおけるセクションの作り方</br>
+  ・  画面遷移</br>
 </br>
 </h3>
 <h4>
-定数や変数、状態変数、関数、クラス、インスタンス化といったプログラミングの基本的概念について学びます。</br>
-勝ち条件の組み込みボタンについて実装し、その結果を表示させます。</br>
+選手のポジションに応じて条件分岐を行い、リストのセクションの作り方について学びます。
 </h4>
 </div>
-<div class="fix-background janken-lose">
-<h2>Lose</h2>
+<div class="fix-background baseball-yakult-player">
+<h2>Player</h2>
 <h3>
 </br>
-  ・  負け条件の関数</br>
-  ・  組み込みボタン</br>
+  ・  レイアウトデザイン</br>
+  ・  選手情報の詳細</br>
 </br>
 </h3>
 <h4>
-for文やif文、モディファイアなどの概念も学べます。</br>
-負け条件の組み込みボタンについて実装し、その結果を表示させます。</br>
+選手の詳細情報のレイアウトデザインを決めていきます。</br>
 </h4>
 </div>
-<div class="fix-background janken-fifty">
-<h2>Draw</h2>
-<h3>
-</br>
-  ・  引き分け条件の関数</br>
-  ・  組み込みボタン</br>
-</br>
-</h3>
-<h4>
-コンピュータの関数やクラスの実装をします。</br>
-引き分け条件の組み込みボタンについて実装し、その結果を表示させます。</br>
-</h4>
-</div>
-<div class="fix-background janken-code">
+<div class="fix-background baseball-all">
 <h2>Course</h2>
 <h3>
 </br>
-  ・  全12回</br>
+  ・  全18回</br>
   ・  Zoomによるオンライン授業</br>
 </br>
 </h3>
 <h4>
-SwiftUIを扱うにあたり、Xcode 11以降のインストールが必要なため、macOS: Catalina 10.15以降のモデルが搭載されているMacbookやiMacなどが必要です。</br
+SwiftUIを扱うにあたり、Xcode 11以降のインストールが必要なため、macOS: Catalina 10.15以降のモデルが搭載されているMacbookやiMacなどが必要です。</br>
 </h4>
 </div>
 </div>
 <!--/#about-->
+
 
 <div class="bg2">
 <h6>Contact</h6>
