@@ -827,7 +827,7 @@ header #logo img {
 	width: 80px;		/*画像幅*/
 	height: 80px;
 	padding: 5%;	/*画像と円形との間の余白*/
-	left: 18%;
+	left: 16%;
 }
 #contents h4.icon:hover {
 	transition: 1.0s;
