@@ -37,7 +37,7 @@ return false;
 $(window).scroll(function() {
 var windowH = $(window).height(),
 scrollY = $(window).scrollTop();
-$('#contents h3, #contents h4, #contents h5').each(function() {
+$('#contents h3, #contents h4, #contents h5, .detail_right, .detail_left').each(function() {
   var elPosition = $(this).offset().top;
   if (scrollY > elPosition - windowH) {
     $(this).addClass("fadein");
@@ -141,7 +141,7 @@ $('#contents h3, #contents h4, #contents h5').each(function() {
 <div id="contents">
 
 
-<div id="about" class="bg2">
+<div id="about" class="bg1">
 <h2>About</h2>
 </div>
 
@@ -157,14 +157,14 @@ $('#contents h3, #contents h4, #contents h5').each(function() {
 </div>
 <div id="about-price">
 <div class="fix-background Price">
-<a href="price.html"><h3>Price</h3></a>
+<a href="price.html"><h3>Price</h3></a>s
 </div>
 </div>
 
 <!--/#about-->
 
 
-<div id="course" class="bg2">
+<div id="course" class="bg1">
 <h2>Course</h2>
 </div>
 <div id="iOS-app" class="bg2">
@@ -187,7 +187,7 @@ Level ★★★★☆</h5>
 <div class="fix-background swiftui-Janken">
 <h4>SwiftUI</br>
 Janken App</br>
-Level ★★☆☆☆</h4>
+Level ★☆☆☆☆</h4>
 <a href="course_janken.html"><h4 class="icon"><img src="images/Janken_icon.png" alt="SwiftUI"></h4></a>
 <p></p>
 <p></p>
@@ -201,7 +201,7 @@ Level ★★☆☆☆</h4>
 <div class="fix-background swiftui-Baseball">
 <h5>SwiftUI</br>
 Baseball Player App</br>
-Level ★★★☆☆</h5>
+Level ★★☆☆☆</h5>
 <a href="course_baseball_player.html"><h5 class="icon"><img src="images/NPB.png" alt="SwiftUI"></h5></a>
 <p></p>
 <p></p>
@@ -211,12 +211,104 @@ Level ★★★☆☆</h5>
 <p></p>
 <p></p>
 </div>
-<div id="iOS-app" class="bg2">
+
+<div id="artificial-intelligence" class="bg2">
 <h2>Artificial Intelligence</h2>
 </div>
+<div class="fix-background python-basic">
+<h5>Python Basic</br>
+Level ★★☆☆☆</h5>
+<a href="course_python_basic.html"><h5 class="icon"><img src="images/course_python/basic/python_logo.png" alt="Python"></h5></a>
+<div class="detail_right">人工知能(AI)の作成において</br>
+使用する言語であるPythonの</br>
+基礎を扱っていくコースです。</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+
+<div class="fix-background python-programing-competitions">
+<h4>Python</br>
+Programing Competitions</br>
+Level ★★★☆☆</h4>
+<a href="course_programing_competition.html"><h4 class="icon"><img src="images/course_python/basic/python_logo.png" alt="Python"></h4></a>
+<div class="detail_left">競技プログラミングを使用して</br>
+現在のPythonの能力の</br>
+向上を目指すコースです。</br>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+エンジニア就活ではコーディング試験</br>
+を採用している企業が多いので</br>
+その対策にも活用できます。</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+
+<div class="fix-background data-analysis">
+<h5>Data Analysis</br>
+Numpy, Pandas, Matplotlib</br>
+Level ★★★☆☆</h5>
+<a href="course_data_analysis.html"><h5 class="icon"><img src="images/course_data_analysis/data_analysis_logo.png" alt="Python"></h5></a>
+<div class="detail_right">AIの作成では不可欠なデータの分析</br>
+と前処理を扱っていくコースです。
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+普段の手作業で面倒なExcel作業を</br>
+Pythonで自動化することも可能です。</div>
+<p></p>
+<p></p>
+<p></p>
+</div>
+<!--
+<div class="fix-background machine-learning">
+<h4>Machine Learning</br>
+Scikit-Learn</br>
+Level ★★★★☆</h4>
+<a href="course_machine_learning.html"><h4 class="icon"><img src="images/course_machine_learning/classification/scikit_learn_logo.jpg" alt="Python"></h4></a>
+<div class="detail_left">AIの領域の一つである</br>
+機械学習を利用して</br>
+回帰問題と分類問題を解くコースです。</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+
+<div class="fix-background deep-learning">
+<h5>Deep Learning</br>
+Pytorch</br>
+Level ★★★★★</h5>
+<a href="course_deep_learning.html"><h5 class="icon"><img src="images/course_deep_learning/pytorch_logo.png" alt="Python"></h5></a>
+<div class="detail_right">AIの領域の一つである</br>
+深層学習を利用して</br>
+画像認識や自然言語処理、強化学習等を</br>
+扱っていくコースです。</div>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</div>
+-->
 <!--/#course-->
 
-<div id="schedule" class="bg2">
+<div id="schedule" class="bg1">
 <h2>Schedule</h2>
 </div>
 
@@ -229,7 +321,7 @@ Level ★★★☆☆</h5>
 <!--/#schedule-->
 
 
-<div class="bg2">
+<div class="bg1">
 <h2>Contact</h2>
 </div>
 

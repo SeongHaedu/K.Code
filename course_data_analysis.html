@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Course</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="K.Code">
+<meta name="keywords" content="K.Code,プログラミング,プログラミングスクール,学生,学生から始めるプログラミング,学生から始められるプログラミングスクール,学生用プログラミングスクール,学生向けのプログラミングスクール,中学,高校,大学">
+<link rel="stylesheet" href="css/style_course_data_analysis.css">
+<link rel="stylesheet" href="css/slide.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+var windowH = $(window).height(),
+scrollY = $(window).scrollTop();
+$('#python-other h2, #python-other h3, #python-other h4').each(function() {
+  var elPosition = $(this).offset().top;
+  if (scrollY > elPosition - windowH) {
+    $(this).addClass("fadein");
+  }else{
+    $(this).removeClass("fadein");
+  }
+});
+});
+</script>
+<!--フェードイン-->
+
+
+
+</head>
+
+<body>
+
+<header>
+
+<div class="fix-background White">
+
+<nav id="menubar">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+
+<div id="container">
+
+<div id="contents">
+
+
+<div class="fix-background data-analysis-home">
+<div id="python">
+<h2>Data Analysis</h2>
+<h3>
+</br>
+Level ★★★☆☆
+</h3>
+<h4>
+</br>
+AIの作成では不可欠なデータの分析と前処理を扱っていくコースです。</br>
+データの分析のライブラリを使用して普段の手作業で面倒なExcel作業をPythonで自動化することも可能です。</div>
+</h4>
+</div>
+
+<div id="python-other">
+<div class="fix-background data-analysis-numpy">
+<h2>Numpy</h2>
+<h3>
+</br>
+  ・  配列の概念</br>
+  ・  行列の扱い方</br>
+  ・  n次元配列同士の高速計算</br>
+</br>
+</h3>
+<h4>
+Numpyは配列を高速に計算するPythonのライブラリです。</br>
+AIアルゴリズムを高速化するために開発でよく使用されます。</br>
+この授業はスライド授業とJupyter Notebook(JN)例題テキスト、JN演習テキストの3部構成となっております。</br>
+</h4>
+</div>
+<div class="fix-background data-analysis-pandas">
+<h2>Pandas</h2>
+<h3>
+</br>
+  ・  データフレームの概念</br>
+  ・  Excelなどの読込み</br>
+  ・  データセットの前処理</br>
+</br>
+</h3>
+<h4>
+Pandasはデータをフレーム型として簡易に処理できるPythonのライブラリです。</br>
+Pandasを使用して普段の手作業で面倒なExcel作業をPythonで自動化することも可能です。</br>
+この授業はスライド授業とJupyter Notebook(JN)例題テキスト、JN演習テキストの3部構成となっております。</br>
+</h4>
+</div>
+<div class="fix-background data-analysis-matplotlib">
+<h2>Matplotlib</h2>
+<h3>
+</br>
+  ・  データの可視化</br>
+  ・  グラフの作成</br>
+</br>
+</h3>
+<h4>
+Matplotlibはデータを可視化するPythonのライブラリです。</br>
+また、グラフの作成も簡単にできます。</br>
+この授業はスライド授業とJupyter Notebook(JN)例題テキスト、JN演習テキストの3部構成となっております。</br>
+</h4>
+</div>
+
+<div class="fix-background data-analysis-home">
+<h2>コースについて</h2>
+<h3>
+</br>
+  ・  それぞれ全4回</br>
+  ・  Zoomによるオンライン授業</br>
+</br>
+</h3>
+<h4>
+PythonとそのライブライであるNumpyやPandas、Matplotlibの環境設定にAnacondaを扱いますので、MacまたはWindows、LinuxのOSがインストールされているPCが必要です。</br>
+</h4>
+</div>
+</div>
+<!--/#about-->
+
+
+<div class="bg2">
+<h6>Contact</h6>
+</div>
+
+<div id="contact">
+
+<div class="fix-background KCode_Contact">
+<p class="c"><a href="index.html"><img src="images/K_Code_label(white_transparency).png" alt="" width="150px"></a></p>
+
+<nav id="menubar_last">
+<ul>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#course">Course</a></li>
+<li><a href="index.html#schedule">Schedule</a></li>
+</ul>
+</nav>
+
+<p>
+Mail: kaito_narimoto@icloud.com<br>
+AM9:00〜PM10:00</p>
+
+</div>
+</div>
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+
+<footer>
+<small>Copyright&copy; K.Code All Rights Reserved.</small>
+<span class="pr">Web Design: Kaito Narimoto</span>
+</footer>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<!--<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>-->
+
+</body>
+</html>

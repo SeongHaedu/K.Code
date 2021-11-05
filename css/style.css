@@ -181,19 +181,28 @@ body.is-fixed .nav-fix-pos {
 
 #contents {
 	overflow: hidden;
-	position: relative;z-index: 1;
+	position: relative;
+	z-index: 1;
 }
 
 #contents section + section {
 	padding-top: 50px;
 }
-
-#contents h2 {
+#contents h1 {
 	clear: both;
 	padding-top: 45px;
 	padding-bottom: 45px;
 	font-size: 45px;	/*文字サイズ*/
 	letter-spacing: 0.2em;	/*文字間隔を少し広くとる設定*/
+	text-align: center;		/*文字をセンタリング*/
+	color: #000000;
+}
+#contents h2 {
+	clear: both;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	font-size: 45px;	/*文字サイズ*/
+	letter-spacing: 0.05em;	/*文字間隔を少し広くとる設定*/
 	text-align: center;		/*文字をセンタリング*/
 	color: #000000;
 }
@@ -248,7 +257,7 @@ body.is-fixed .nav-fix-pos {
 	height: 120px;
 	padding: 3%;	/*画像と円形との間の余白*/
 	top: 0px;	/*上に100px移動させる設定*/
-	left: 23%;
+	left: 24%;
 	color: #fff;
 	background: #87cefa;
 	border-radius: 50%;	/*円形にする指定。外すと四角形になる。10pxなどにすると角が丸くなった四角形になる。*/
@@ -285,7 +294,7 @@ body.is-fixed .nav-fix-pos {
 	height: 120px;
 	padding: 3%;	/*画像と円形との間の余白*/
 	top: 0px;	/*上に100px移動させる設定*/
-	left: 63%;
+	left: 64%;
 	color: #fff;
 	background: #b4a282;
 	border-radius: 50%;	/*円形にする指定。外すと四角形になる。10pxなどにすると角が丸くなった四角形になる。*/
@@ -303,6 +312,30 @@ body.is-fixed .nav-fix-pos {
 	text-align: right;
 	color: #fff
 }
+.detail_left {
+	color: #ffffff;
+	font-size: 33px;	/*文字サイズ*/
+	position: relative;
+	top: 0px;	/*上に100px移動させる設定*/
+	left: 10%;
+	text-align: center;
+	width: 40%;
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+.detail_right {
+	transition: 1.0s;
+	color: #ffffff;
+	font-size: 33px;	/*文字サイズ*/
+	position: relative;
+	top: 0px;	/*上に100px移動させる設定*/
+	left: 45%;
+	text-align: center;
+	width: 50%;
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+
 
 /*コンテンツ内にあるp(段落)タグ設定*/
 #contents p {
@@ -406,6 +439,31 @@ body.is-fixed .nav-fix-pos {
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
+.python-basic {
+	background-image: url(../images/course_python/basic/basic.png);
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+.python-programing-competitions {
+	background-image: url(../images/course_python/programing_competition/programing.png);
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+.data-analysis {
+	background-image: url(../images/course_data_analysis/data_analysis.png);
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+.machine-learning {
+	background-image: url(../images/course_machine_learning/classification/machine_learning.png);
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+.deep-learning {
+	background-image: url(../images/course_deep_learning/deep_learning.png);
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
 .background-schedule {
 	background-image: url(../images/moraine.jpg);
 }
@@ -415,32 +473,30 @@ body.is-fixed .nav-fix-pos {
 }
 
 /*bg1〜bg4背景色（共通）*/
-.bg1 {
-	padding: 50px 3%;
-}
+/*白色ボックス*/
 /*clearfix（変更不要）*/
 .bg1:after {
     content: "";display: block;clear: both;
 }
 /*リンクテキストの文字色*/
 .bg1 a:hover {
-	color: #ffff00;
+	color: #ffffff;
 }
 /*bg1ブロック*/
 .bg1 {
-	background: #cfba96;	/*背景色*/
-	color: #fff;			/*文字色*/
+	min-height: 100%;
+	background: #ffff;	/*背景色*/
+	color: #ffff;			/*文字色*/
+	padding: 0 15% 5px;
 }
 /*bg1ブロック内の円形イラストの背景色*/
 .bg1 h2.img {
 	background: #b4a282 !important;
 }
-
-/*白色ボックス*/
-/*clearfix（変更不要）*/
-.bg2:after {
+.bg1:after {
     content: "";display: block;clear: both;
 }
+
 /*リンクテキストの文字色*/
 .bg2 a:hover {
 	color: #ffffff;
@@ -448,7 +504,7 @@ body.is-fixed .nav-fix-pos {
 /*bg2ブロック*/
 .bg2 {
 	min-height: 100%;
-	background: #ffff;	/*背景色*/
+	background: #C0C0C0;	/*背景色*/
 	color: #ffff;			/*文字色*/
 	padding: 0 15% 5px;
 }
@@ -551,29 +607,6 @@ footer .pr {
 	border-radius: 30px;	/*角丸のサイズ。この１行を削除すると、通常の長方形になります。*/
 	margin-bottom: 30px;	/*下に空けるスペース*/
 	background: #c0c0c0;		/*背景色*/
-}
-
-/*bg1タイプの背景色*/
-.bg1 {
-	padding: 0 15% 20px;
-	border-radius: 15px;
-}
-/*clearfix（変更不要）*/
-.bg1:after {
-    content: "";display: block;clear: both;
-}
-/*リンクテキストの文字色*/
-.bg1 a:hover {
-	color: #ffff00;
-}
-/*bg1ブロック*/
-.bg1 {
-	background: #cfba96;	/*背景色*/
-	color: #fff;			/*文字色*/
-}
-/*bg1ブロック内の円形イラストの背景色*/
-.bg1 h5.img {
-	background: #b4a282 !important;
 }
 
 
@@ -813,9 +846,11 @@ header #logo img {
 #contents p {
 	font-size: 12px;
 }
-
-#contents h2 {
+#contents h1 {
 	font-size: 25px;	/*文字サイズ*/
+}
+#contents h2 {
+	font-size: 21px;	/*文字サイズ*/
 }
 /*コンテンツ内にあるh3(見出し)タグの指定*/
 #contents h3 {
@@ -850,6 +885,15 @@ header #logo img {
 	background: #b4a282;
 	box-shadow: 0px 10px 0px 0px #fff,0px 15px 5px 0px rgba(0,0,0,0.2);
 }
+.detail_left {
+	font-size: 0px;
+	height: 0px;
+}
+.detail_right {
+	font-size: 0px;
+	height: 0px;
+}
+
 #contact {
 	height: 700px;
 }
@@ -893,7 +937,7 @@ header #logo img {
 
 .swiftui-CafeLatte {
 	background-image: url(../images/course_cafe_latte/cafe_detail_iphone.png);
-	padding-top: 50px;
+	padding-top: 60px;
 	padding-bottom: 10px;
 }
 .swiftui-Janken {
@@ -903,8 +947,33 @@ header #logo img {
 }
 .swiftui-Baseball {
 	background-image: url(../images/course_pro_baseball/baseball_home_iphone.png);
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 10px;
+}
+.python-basic {
+	background-image: url(../images/course_python/basic/basic_iphone.png);
+	padding-top: 200px;
+	padding-bottom: 0px;
+}
+.python-programing-competitions {
+	background-image: url(../images/course_python/programing_competition/programing_iphone.png);
+	padding-top: 110px;
+	padding-bottom: 10px;
+}
+.data-analysis {
+	background-image: url(../images/course_data_analysis/data_analysis_iphone.png);
+	padding-top: 180px;
+	padding-bottom: 10px;
+}
+.machine-learning {
+	background-image: url(../images/course_machine_learning/classification/machine_learning_iphone.png);
+	padding-top: 110px;
+	padding-bottom: 10px;
+}
+.deep-learning {
+	background-image: url(../images/course_deep_learning/deep_learning_iphone.png);
+	padding-top: 200px;
+	padding-bottom: 25px;
 }
 .KCode_Contact {
 	background-image: url(../images/about_kcode/KCode_home_short.png);

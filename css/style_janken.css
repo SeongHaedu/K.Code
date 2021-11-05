@@ -284,12 +284,12 @@ body.is-fixed .nav-fix-pos {
 }
 
 #contact {
-	height: 700px;
+	height: 1000px;
 }
 #contact p {
 	font-size: 23px;
 	text-align: center;
-	padding-top: 210px;
+	padding-top: 240px;
 	color: #000;
 }
 #contact img {
